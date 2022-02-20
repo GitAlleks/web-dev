@@ -7,42 +7,72 @@
 	</head>
 
 	<body>
+		<div id="site-container"> <!-- div site-container-->
 
-		<div>
-			<h1>Hotel Name</h1>
+			<div id="header"> <!-- Див шапка-->
+				<h1>Hotel Name</h1>
 
-			<table width="850">
-				<tr>
-					<td></td>
-					<td><a href="index.html">Головна</a></td>
-					<td><a href="index.html">Номери</a></td>
-					<td><a href="index.html">Зручності</a></td>
-					<td><a href="index.html">Галерея</a></td>
-					<td><a href="index.html"><strong>ЗАБРОНЮВАТИ</strong></a></td>
-					<td></td>
-				</tr>
-			</table>
+				<table width="850">
+					<tr>
+						<td></td>
+						<td><a href="#Головна">Головна</a></td>
+						<td><a href="#Номери">Номери</a></td>
+						<td><a href="#Зручності">Зручності</a></td>
+						<td><a href="#Галерея">Галерея</a></td>
+						<td><a href="#Забронювати"><strong>Забронювати</strong></a></td>
+						<td></td>
+					</tr>
+				</table>
 			
-			<hr>
+				<hr>
+			</div>
+
+
+
+			<div> <!-- Див головна страница-->
+				<section id="Головна">
+					<form action="action.php">
+						<p>Забронюйте номер</p>
+						<label for="check-in">Заїзд:</label><br>
+						<input type="date" id="check-in"><br>
+				
+						<label for="check-out">Виїзд:</label><br>
+						<input type="date" id="check-out"><br>
+
+						<label for="adult">Дорослих:</label><br>
+						<input type="number" id="adult"><br>
+
+						<label for="kid">Дітей:</label><br>
+						<input type="number" id="kid"><br>
+				
+					</form>
+				</section>
+			</div>
+
+
+			<div id="Номери">
+				<div align="center">
+					<h2> Наші номери </h2>
+					<p>We all live in an age that belongs to the young at heart. Life that is becoming extremely fast,<br>day to day, also asks us to remain physically young. Young at heart.</p>
+				</div>
+
+			</div>
+
+			<div id="Зручності">
+				
+			</div>
+
+			<div id="Галерея">
+
+			</div>
+
+			<div id="Забронювати">
+
+			</div>
+
+
 		</div>
 
-		<div>
-			<form action="action.php">
-				<p>Забронюйте номер</p>
-				<label for="check-in">Заїзд:</label><br>
-				<input type="date" id="check-in"><br>
-				
-				<label for="check-out">Виїзд:</label><br>
-				<input type="date" id="check-out"><br>
-
-				<label for="adult">Дорослих:</label><br>
-				<input type="number" id="adult"><br>
-
-				<label for="kid">Дітей:</label><br>
-				<input type="number" id="kid"><br>
-				
-			</form>
-		</div>
 
 	</body>
 </html>
