@@ -15,7 +15,7 @@
 				<table width="850">
 					<tr>
 						<td></td>
-						<td><a href="#Головна">Головна</a></td>
+						<td><a href="#header">Головна</a></td>
 						<td><a href="#Номери">Номери</a></td>
 						<td><a href="#Зручності">Зручності</a></td>
 						<td><a href="#Галерея">Галерея</a></td>
@@ -40,21 +40,32 @@
 								<form action="action.php">
 									<p><b>Забронюйте номер</b></p>
 									<label for="check-in">Заїзд:</label><br>
-									<input type="date" id="check-in"><br>
+									<input type="date" id="check-in"><br><br>
 									
 									<label for="check-out">Виїзд:</label><br>
-									<input type="date" id="check-out"><br>
-					
-									<label for="adult">Дорослих:</label><br>
-									<input type="number" id="adult"><br>
-					
-									<label for="kid">Дітей:</label><br>
-									<input type="number" id="kid"><br>
+									<input type="date" id="check-out"><br><br>
+									
+									<label for="adult">Дорослих:</label>
+									<select name="adult">
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+									</select>
+									
+									<label for="kid">Дітей:</label>
+									<select name="kid">
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+									</select>
+									<br><br>
+									<input type="submit" value="Підібрати номер"><br>
 								</form>
 							</td>
 						</tr>
 					</table>
 				</section>
+
 			</div>
 
 
