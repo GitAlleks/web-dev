@@ -45,3 +45,72 @@
     column-count:         1;
    }
 }
+
+#footer {
+   position: fixed; /* Фиксированное положение */
+   left: 0; bottom: 0; /* Левый нижний угол */
+   color: #fff; /* Цвет текста */
+   width: 100%; /* Ширина слоя */
+  }
+
+#footer div {
+   padding: 10px; /* Поля вокруг текста */
+   background: #39b54a; /* Цвет фона */
+}
+
+.row {
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -ms-flex-wrap: wrap;
+   flex-wrap: wrap;
+   margin-right: -15px;
+   margin-left: -15px;
+}
+
+.form-control {
+   display: block;
+   width: 100%;
+   height: calc(2.25rem + 2px);
+   padding: 1px;
+   font-size: 1rem;
+   line-height: 1.5;
+   color: #495057;
+   background-color: #fff;
+   background-clip: padding-box;
+   border: 1px solid #ced4da;
+   border-radius: .25rem;
+}
+
+.form-group {
+   margin-bottom: 1rem;
+   margin-left: 25px;
+   margin-top: 5px;
+}
+
+.text-black{
+   color: black;
+}
+
+label {
+   display: inline-block;
+   margin-bottom: .5rem;
+}
+
+.border{
+   border: 1px solid;
+}
+
+.icon-wrap {
+   position: relative;
+}
+
+.icon-wrap .icon {
+   position: absolute;
+   top: 50%;
+   -webkit-transform: translateY(-50%);
+   -ms-transform: translateY(-50%);
+   transform: translateY(-50%);
+   right: 15px;
+   z-index: 2;
+}
