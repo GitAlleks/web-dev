@@ -1,118 +1,119 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>The Kings</title>
-		<link href="css/style.css" rel="stylesheet">
-		<link rel="shortcut icon" href="img/logo2.png" type="image/x-icon">
-	</head>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>The Kings</title>
+	<link href="css/style.css" rel="stylesheet">
+	<link rel="shortcut icon" href="img/logo2.png" type="image/x-icon">
+	<!-- FONTS -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700;800&family=Raleway:wght@300;400;600;900&display=swap" rel="stylesheet">	
+</head>
 
-	<body>
+<body>
 
-		<div id="site-container"> <!-- div site-container-->
-
-			<div id="header"> <!-- Див шапка-->
-				<h1 style="margin-left:10px;">The Kings</h1>
-
-				<table align="center" width="850" style="margin-top: -50px;">
-					<tr>
-						<td></td>
-						<td><a href="index.html#header">Головна</a></td>
-						<td><a href="index.html#Номери">Номери</a></td>
-						<td><a href="index.html#Про нас">Про нас</a></td>
-						<td><a href="index.html#Галерея">Галерея</a></td>
-						<td><a href="booking.html"><strong>Забронювати</strong></a></td>
-						<td></td>
-					</tr>
-				</table>
-			
-				<hr>
+<header class="header">
+	<div class="container">
+		<div class="header__inner text-black">
+			<div class="header__logo">
+				<a href="/index.html" class="logo__link ">THE KINGS</a>
 			</div>
 
-			<div class="contact-form">
-
-				<form action="#" method="post" class="border">
-					<div class="row">
-
-						<div class="name form-group">
-							<label class="text-black">Name</label>
-							<input type="text" id="name" class=""> <!--+ class form-control-->
-						</div>
-						<div class="phone form-group">
-							<label>Phone</label>
-							<input type="text" id="phone" class=""><!--+ class form-control-->
-						</div>
-
-
-					</div>
-					<div class="row">
-						<div class="form-group">
-							<label for="" class="text-black">Email</label>
-							<input type="email" id="email" class=""><!--+ class form-control-->
-						</div>
-					</div>
-
-					<div class="row">
-						<div class="columns form-group">
-							<label for="room" class="text-black">Нормер</label>
-								<select name="Дорослі" id="adult" class=""><!--+ class form-control-->
-									<option value="">Стандарт</option>
-									<option value="">Сімейний</option>
-									<option value="">Люкс</option>
-								</select>
-						</div>
-
-						<div class="date-check-in form-group">
-							<label for="check_in" class="text-black">Дата заїзду</label>
-							<input type="date" id="date-check-in" class=""><!--+ class form-control-->
-						</div>
-						<div class="date-check-out form-group">
-							<label for="check_o" class="text-black">Дата заїзду</label>
-							<input type="date" id="check_out" class=""> <!--+ class form-control-->
-						</div>
-
-					</div>
-
-					<div class="row">
-						<div class="columns form-group">
-							<label for="adult" class="text-black">Дорослі</label>
-								<select name="Дорослі" id="adult" class=""><!--+ class form-control-->
-									<option value="">1</option>
-									<option value="">2</option>
-									<option value="">3</option>
-									<option value="">4</option>
-									<option value="">5</option>
-								</select>
-						</div>
-
-						<div class="columns form-group">
-							<label for="children" class="text-black">Діти</label>
-								<select name="Діти" id="children" class=""><!--+ class form-control-->
-									<option value="">1</option>
-									<option value="">2</option>
-									<option value="">3</option>
-									<option value="">4</option>
-									<option value="">5</option>
-								</select>
-						</div>
-					</div>
-
-					<div class="row">
-						<div class="columns form-group">
-							<label for="message" class="text-black">Додатково</label>
-							<textarea name="message" id="message" cols="30" rows="10"></textarea>
-						</div>
-					</div>
-
-
-				</form>
-			</div>
-
-			<div class="righ-side">
-				<div class="row"></div>
-			</div>
+			<nav class="nav">
+				<a href="/index.html" class="nav__link">Main</a>
+				<a href="/index.html" class="nav__link">Rooms</a>
+				<a href="/index.html" class="nav__link">About</a>
+				<a href="/index.html" class="nav__link">Gallery</a>
+				<a href="#" class="nav__link">Booking</a>
+			</nav>
 		</div>
+	</div>
+</header>
 
-	</body>
+<div id="site-container"> <!-- div site-container-->
+
+
+	<div class="contact-form">
+
+		<form action="#" method="post" class="border">
+			<div class="row">
+
+				<div class="name form-group">
+					<label class="text-black">Name</label>
+					<input type="text" id="name" class=""> <!--+ class form-control-->
+				</div>
+				<div class="phone form-group">
+					<label>Phone</label>
+					<input type="text" id="phone" class=""><!--+ class form-control-->
+				</div>
+
+
+			</div>
+			<div class="row">
+				<div class="form-group">
+					<label for="" class="text-black">Email</label>
+					<input type="email" id="email" class=""><!--+ class form-control-->
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="columns form-group">
+					<label for="room" class="text-black">Нормер</label>
+						<select name="Дорослі" id="adult" class=""><!--+ class form-control-->
+							<option value="">Стандарт</option>
+							<option value="">Сімейний</option>
+							<option value="">Люкс</option>
+						</select>
+				</div>
+
+				<div class="date-check-in form-group">
+					<label for="check_in" class="text-black">Дата заїзду</label>
+					<input type="date" id="date-check-in" class=""><!--+ class form-control-->
+				</div>
+				<div class="date-check-out form-group">
+					<label for="check_o" class="text-black">Дата заїзду</label>
+					<input type="date" id="check_out" class=""> <!--+ class form-control-->
+				</div>
+
+			</div>
+
+			<div class="row">
+				<div class="columns form-group">
+					<label for="adult" class="text-black">Дорослі</label>
+						<select name="Дорослі" id="adult" class=""><!--+ class form-control-->
+							<option value="">1</option>
+							<option value="">2</option>
+							<option value="">3</option>
+							<option value="">4</option>
+							<option value="">5</option>
+						</select>
+				</div>
+
+				<div class="columns form-group">
+					<label for="children" class="text-black">Діти</label>
+						<select name="Діти" id="children" class=""><!--+ class form-control-->
+							<option value="">1</option>
+							<option value="">2</option>
+							<option value="">3</option>
+							<option value="">4</option>
+							<option value="">5</option>
+						</select>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="columns form-group">
+					<label for="message" class="text-black">Додатково</label>
+					<textarea name="message" id="message" cols="30" rows="10"></textarea>
+				</div>
+			</div>
+
+
+		</form>
+	</div>
+</div>
+
+</body>
 </html>
