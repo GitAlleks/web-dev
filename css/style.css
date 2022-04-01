@@ -1,116 +1,163 @@
-.gallery {
-   line-height:0;
-   -webkit-column-count:5; /* split it into 5 columns */
-   -webkit-column-gap:5px; /* give it a 5px gap between columns */
-   -moz-column-count:5;
-   -moz-column-gap:5px;
-   column-count:5;
-   column-gap:5px;
+body { 
+   margin: 0;
+   font-family: 'Montserrat', sans-serif;
+   font-size: 15px;
+   font-weight: 300;
+   color: #fff;
+   background-color:#f0f8ff;  
+}
+a {
+   cursor: pointer;
 }
 
-.gallery img {
-   width: 100% !important;
-   height: auto !important;
-   margin-bottom:5px; /* to match column gap */
+
+h1, h2, h3, h4, h5, h6 {
+   margin: 0;
 }
 
-@media (max-width: 1200px) {
-   .gallery {
-    -moz-column-count:    4;
-    -webkit-column-count: 4;
-    column-count:         4;
-   }
+*, *::before, *::after {
+   box-sizing: border-box;
 }
 
-@media (max-width: 1000px) {
-   .gallery {
-    -moz-column-count:    3;
-    -webkit-column-count: 3;
-    column-count:         3;
-   }
-}
-
-@media (max-width: 800px) {
-   .gallery {
-    -moz-column-count:    2;
-    -webkit-column-count: 2;
-    column-count:         2;
-   }
-}
-
-@media (max-width: 400px) {
-   .gallery {
-    -moz-column-count:    1;
-    -webkit-column-count: 1;
-    column-count:         1;
-   }
-}
-
-#footer {
-   position: fixed; /* Фиксированное положение */
-   left: 0; bottom: 0; /* Левый нижний угол */
-   color: #fff; /* Цвет текста */
-   width: 100%; /* Ширина слоя */
-  }
-
-#footer div {
-   padding: 10px; /* Поля вокруг текста */
-   background: #39b54a; /* Цвет фона */
-}
-
-.row {
-   display: -webkit-box;
-   display: -ms-flexbox;
-   display: flex;
-   -ms-flex-wrap: wrap;
-   flex-wrap: wrap;
-   margin-right: -15px;
-   margin-left: -15px;
-}
-
-.form-control {
-   display: block;
+.container {
    width: 100%;
-   height: calc(2.25rem + 2px);
-   padding: 1px;
-   font-size: 1rem;
-   line-height: 1.5;
-   color: #495057;
-   background-color: #fff;
-   background-clip: padding-box;
-   border: 1px solid #ced4da;
-   border-radius: .25rem;
+   max-width: 1170px;
+   margin: 0 auto;
 }
 
-.form-group {
-   margin-bottom: 1rem;
-   margin-left: 25px;
-   margin-top: 5px;
-}
 
-.text-black{
-   color: black;
-}
+/* HEADER 
+-----------*/
+.header {
+   width: 100%;
+   height: 100px;
 
-label {
-   display: inline-block;
-   margin-bottom: .5rem;
-}
-
-.border{
-   border: 1px solid;
-}
-
-.icon-wrap {
-   position: relative;
-}
-
-.icon-wrap .icon {
    position: absolute;
-   top: 50%;
-   -webkit-transform: translateY(-50%);
-   -ms-transform: translateY(-50%);
-   transform: translateY(-50%);
-   right: 15px;
-   z-index: 2;
+   top: 0;
+   left: 0;
+   z-index: 1000;
+}
+
+.header__logo {
+   font-size: 22px;
+   color: #fff;
+   font-weight: 600;
+   letter-spacing: 2px;
+}
+
+.logo__link{
+   color: #fff;
+   text-decoration: none;
+
+   transition: color .1s linear;
+}
+
+.logo__link:hover {
+   color: yellowgreen;
+
+}
+
+.header__inner {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 35px 0;
+   border-bottom: 1.5px solid #53535350;
+}
+
+.nav {
+   display: flex;
+   font-size: 14px;
+   font-weight: 700;
+   text-transform: uppercase;
+   float:right;
+   
+}
+
+.nav__link {
+   margin-left: 50px;
+
+   color: #fff;
+   text-decoration: none;
+
+   transition: opacity, color, transform .1s linear;
+}
+
+.nav__link:first-child{
+   margin-left: 0;
+}
+
+.nav__link:hover {
+   opacity: 1;
+   color: yellowgreen;
+   transform: scale(1.05);
+}
+
+
+/* MAIN
+---------------*/
+
+.main {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   height: 780px;
+   background: #132737 url("../img/main.jpg") center no-repeat;
+   background-size: cover;
+
+}
+
+.main__inner {
+   max-width: 970px;
+   width: 100%;
+   margin: 0 auto;
+   text-align: center;
+}
+
+.main__title {
+   margin: 0 0 40px;
+   font-family: 'Montserrat', sans-serif;
+   font-size: 40px;
+   font-weight: 800;
+   color: #fff;
+   text-transform: uppercase;
+
+}
+
+.main__subtitle {
+   margin-bottom: 60px;
+   font-size: 20px;
+   font-weight: 500;
+   line-height: 1.3;
+   letter-spacing: 1px;
+   text-transform: none;
+}
+
+/* BUTTON BOOK NOW
+-------------------*/
+
+.buttn {
+   display: inline-block;
+   cursor: pointer;
+
+   padding: 13px 25px;
+   border-radius: 7px;
+   border: 0;
+
+   font-family: 'Montserrat', sans-serif;
+   font-size: 15p;
+   color: #e2dada;
+   font-weight: 500;
+   text-decoration: none;
+   text-transform: uppercase;
+   transition: background .2s linear;
+}
+
+.button-red {
+   background-color: #cf3030;
+}
+
+.button-red:hover {
+   background-color: #b42323;
+   transform: scale(1.02 );
 }
