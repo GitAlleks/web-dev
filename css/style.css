@@ -161,3 +161,41 @@ h1, h2, h3, h4, h5, h6 {
    background-color: #b42323;
    transform: scale(1.02 );
 }
+
+
+
+/* FEATURES
+-------------------*/
+
+.features {
+   display: flex;
+   flex-wrap: wrap;
+   margin: 100px 0;
+   color: black;
+}
+
+.features__item {
+   width: 33.33333%;
+   padding: 0 40px;
+
+   text-align: center;
+   
+}
+
+.features__icon {
+   margin-bottom: 20px;
+   max-height: 65px;
+}
+
+.features__title {
+   margin-bottom: 20px;
+   color: black;
+   font-family: 'Montserrat', sans-serif;
+   font-size: 15px;
+   text-transform: uppercase;
+}
+
+.features__text {
+   font-size: 13px;
+   margin-bottom: 40px;
+}
