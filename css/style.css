@@ -199,3 +199,141 @@ h1, h2, h3, h4, h5, h6 {
    font-size: 13px;
    margin-bottom: 40px;
 }
+
+
+
+
+
+/* ROOMS
+======== */
+
+.rooms {
+   display: flex;
+   flex-wrap: wrap;
+   color: #fff;
+   padding: 70px 0;
+   background-color: #ebeff4;
+}
+
+.tiny__text {
+   font-family: 'Raleway', sans-serif;
+   font-size: 14px;
+   font-weight: 600;
+  
+   letter-spacing: 1.3px;
+   word-spacing: 2px;
+   color: #bfc2c6;
+  
+   width: 100%;
+   margin-bottom: 8px;
+}
+
+.inner__title {
+   margin-bottom: 10px;
+   font-size: 50px;
+}
+
+.rooms__innner {
+   font-family: 'Raleway', sans-serif;
+  
+   color: black;
+
+   display: flex;
+   justify-content: center;
+   text-align: center;
+   flex-wrap: wrap;
+
+   width: 100%;
+   margin-bottom: 10px;
+}
+
+.rooms__item {
+ 
+   width: 25%;
+   position: relative;
+   overflow: hidden;
+   height: 600px;
+   border-top: 20px solid #ebeff4;
+   border-bottom: 20px solid #ebeff4;
+   border-right: 20px solid #ebeff4;
+}
+
+.rooms__item:last-child {
+   border-right: 0px;
+}
+
+.rooms__item:hover .rooms__content {
+   opacity: 1;
+}
+
+.rooms__photo {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   z-index: 1;
+   transform: translate3d(-50%, -50%, 0);
+}
+
+.rooms__content{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   text-align: center;
+   font-family: 'Raleway', sans-serif;
+   opacity: 0;
+
+   width: 100%;
+   height: 100%;
+   background-color: rgba(19, 39, 55, .9);   
+   transition: opacity .3s linear;
+
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: 2;
+}
+
+.rooms__title {
+   font-size: 45px;
+   font-weight: 600;
+   margin-bottom: 40px;
+   padding-top: 30px;
+   text-align: center;
+
+}
+.rooms__subtitle{
+   font-size: 20px;
+   font-weight: 300;
+}
+.rooms__price {
+   font-size: 45px;
+   font-weight: 600;
+   margin-bottom: 50px;
+}
+.rooms__text {
+   font-family: 'Raleway', sans-serif;
+   font-size: 16px;
+   margin: 0 10px;
+   margin-bottom: 45px;
+
+}
+
+.rooms__button {
+
+   font-family: 'Raleway', sans-serif;
+   font-weight: 600;
+   font-size: 17px;
+}
+
+.rooms__button a {
+   text-decoration: none;
+   text-transform: uppercase;
+   color: #fff;
+   line-height: 5px;
+
+}
+
+.rooms__button a:hover {
+   color:#ff4242d3;
+   border-bottom: 1px solid #cf3030;
+}
