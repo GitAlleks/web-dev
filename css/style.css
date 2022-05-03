@@ -95,6 +95,47 @@ h1, h2, h3, h4, h5, h6 {
    transform: scale(1.05);
 }
 
+.burger {
+   display: none;
+   padding: 15px 0;
+   background: none;
+
+   cursor: pointer;
+   border: 0;
+}
+.burger__item {
+   display: block;
+   width: 28px;
+   height: 3px;
+
+   font-size: 0;
+   color: transparent;
+   position: relative;
+
+   background-color: #e1e2e4;
+}
+
+.burger__item::before,
+.burger__item::after {
+   content: "";
+   width: 100%;
+   height: 100%;
+   background-color: #e1e2e4;
+
+   position: absolute;
+   left: 0;
+   z-index: 1;
+}
+
+.burger__item::before {
+   top: -8px;
+}
+
+.burger__item::after {
+   top: 8px;
+}
+
+
 
 /* MAIN
 ---------------*/
@@ -487,6 +528,117 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
+/* Media 
+=====================*/
+
+@media(max-width:1200px) {
+
+   /* HEADER 
+   -----------*/
+   .header {
+      padding: 0 40px;
+   }
+   
+   /* MAIN
+   ---------------*/
+   .main__subtitle {
+      font-size: 18px;
+
+   }
+}
+@media(max-width:1050px) {
+   /* MAIN 
+   -----------*/
+   .main__subtitle {
+      padding: 0 90px;
+   }
+}
+
+@media(max-width:990px) {
+   /* HEADER 
+   -----------*/
+   .header {
+      padding-left: 50px;
+   }
+   /* MAIN 
+   -----------*/
+   .main__subtitle {
+      padding: 0 90px;
+   }
+}
+
+@media(max-width:870px) {
+   /* HEADER 
+   -----------*/
+   .nav {
+      font-size: 14px;
+      font-weight: 600;
+   }
+   .nav__link {
+      margin-left: 20px;
+   }
+   
+}
+
+@media(max-width:767px) {
+
+   /* HEADER 
+   -----------*/
+   .nav {
+      display: none;
+   }
+   .burger {
+      
+      display: block;
+   }
+
+   /* MAIN 
+   -----------*/
+   
+   .main {
+      height: auto;
+      padding: 130px 0;
+   }
+}
+
+@media(max-width:500px) {
+   /* MAIN
+   -----------*/
+   .main__title {
+      font-size: 35px;
+   }
+   .main__subtitle {
+      font-size: 15px;
+      line-height: 1.8;
+   }
+   .main {
+      height: auto;
+      padding-bottom: 70px;
+   }
+}
+
+@media(max-width:430px) {
+   /* MAIN
+   -----------*/
+
+   .main__title {
+      font-size: 28px;
+      margin-bottom: 25px;
+   }
+   .main__subtitle {
+      font-size: 14px;
+      line-height: 1.8;
+      margin-bottom: 40px;
+   }
+
+}
+
+
+
+
+
+
+
 
 
 
@@ -685,7 +837,6 @@ h1, h2, h3, h4, h5, h6 {
 .booking-form .submit-btn:focus {
    opacity: 0.9;
 }
-
             
 .white-mode {
    text-decoration: none;
