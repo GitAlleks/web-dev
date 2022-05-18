@@ -853,19 +853,6 @@ h1, h2, h3, h4, h5, h6 {
 /* Media 
 =====================*/
 
-@media(max-height:715px){
-   .section {
-      height: 110vh;
-   }
-}
-
-@media(max-height:640px){
-   .section {
-      height: 120vh;
-   }
-}
-
-
 @media(max-width:1300px) {
    .gallery__item {
       width: 50%;
@@ -968,6 +955,9 @@ h1, h2, h3, h4, h5, h6 {
 
    /* HEADER 
    -----------*/
+   nav {
+      display: none;
+   }
    .nav {
       display: none;
    }
@@ -976,9 +966,6 @@ h1, h2, h3, h4, h5, h6 {
       display: block;
    }
 
-   .d-md-block {
-      display: none;
-   }
 
    /* MAIN 
    -----------*/
@@ -1024,6 +1011,9 @@ h1, h2, h3, h4, h5, h6 {
 @media(max-width:500px) {
    /* MAIN
    -----------*/
+   .d-md-none{
+      display: none;
+   }
    .main__title {
       font-size: 35px;
    }
