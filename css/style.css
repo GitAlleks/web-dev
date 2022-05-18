@@ -853,12 +853,23 @@ h1, h2, h3, h4, h5, h6 {
 /* Media 
 =====================*/
 
+@media(max-height:715px){
+   .section {
+      height: 110vh;
+   }
+}
+
+@media(max-height:640px){
+   .section {
+      height: 120vh;
+   }
+}
+
 
 @media(max-width:1300px) {
    .gallery__item {
       width: 50%;
    }
-
 }
 
 @media(max-width:1200px) {
@@ -950,9 +961,6 @@ h1, h2, h3, h4, h5, h6 {
       height: 125vh;
    }
 
-   .booking-form {
-
-   }
 
    .booking-form::before {
       background: rgba(0, 0, 0, 0.5);
@@ -1083,6 +1091,10 @@ h1, h2, h3, h4, h5, h6 {
 
    .container {
       padding: 0 5px;
+   }
+
+   .section {
+      height: 155vh;
    }
 
 }
