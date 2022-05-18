@@ -1007,6 +1007,10 @@ h1, h2, h3, h4, h5, h6 {
 @media(max-width:500px) {
    /* MAIN
    -----------*/
+   .section {
+      height: 155vh;
+   }
+
    .booking-form {
       margin-top: 0;
       border-radius: 10px;
@@ -1097,15 +1101,6 @@ h1, h2, h3, h4, h5, h6 {
       padding: 0 20px;
       margin-bottom: 30px;
    }
-
-   .container {
-      padding: 0 5px;
-   }
-
-   .section {
-      height: 130vh;
-   }
-
 }
 
 
