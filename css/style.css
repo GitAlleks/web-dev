@@ -853,6 +853,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Media 
 =====================*/
 
+
 @media(max-width:1300px) {
    .gallery__item {
       width: 50%;
@@ -1014,6 +1015,17 @@ h1, h2, h3, h4, h5, h6 {
    .d-md-none{
       display: none;
    }
+   .booking-form .form-header h1 {
+      font-size: 25px;
+   }
+   
+   .booking-form .form-control {
+      height: 50px;
+   }
+   .booking-form input[type="date"].form-control+.form-label {top: 6px;}
+   .booking-form .submit-btn {height: 45px;}
+
+
    .main__title {
       font-size: 35px;
    }
@@ -1092,4 +1104,5 @@ h1, h2, h3, h4, h5, h6 {
    }
 
 }
+
 
