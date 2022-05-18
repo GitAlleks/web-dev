@@ -897,6 +897,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media(max-width:990px) {
+
+   
    /* HEADER 
    -----------*/
    .header {
@@ -942,6 +944,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media(max-width:767px) {
+
+
+   .section {
+      height: 125vh;
+   }
+
+   .booking-form {
+
+   }
+
+   .booking-form::before {
+      background: rgba(0, 0, 0, 0.5);
+   }
 
    /* HEADER 
    -----------*/
