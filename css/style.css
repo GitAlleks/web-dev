@@ -1010,6 +1010,7 @@ h1, h2, h3, h4, h5, h6 {
    .section {
       height: 155vh;
    }
+   .booking-form input[type="date"].form-control {    padding-top: 9px;}
 
    .booking-form {
       margin-top: 0;
