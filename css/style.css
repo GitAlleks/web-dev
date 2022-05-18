@@ -1009,6 +1009,10 @@ h1, h2, h3, h4, h5, h6 {
    -----------*/
    .booking-form {
       margin-top: 0;
+      border-radius: 10px;
+      margin: 5px;
+      padding: 30px;
+      top: -10px;
    }
 
    .d-md-none{
@@ -1023,7 +1027,7 @@ h1, h2, h3, h4, h5, h6 {
    }
    .booking-form input[type="date"].form-control+.form-label {top: 6px;}
    .booking-form .submit-btn {height: 45px;}
-
+   .booking-form .submit-btn {font-size: 15px;}
 
    .main__title {
       font-size: 35px;
